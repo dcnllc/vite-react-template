@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacific Crest Technologies | AI, Systems Integration & Cybersecurity Consulting</title>
+  <meta name="description" content="Hawaiʻi-based, women-owned AI and Cybersecurity consulting firm with 70+ years of combined experience helping federal defense contractors and small businesses achieve compliance." />
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            pacific: {
+              deep: '#134E5E',
+              ocean: '#1B5E6F',
+              teal: '#2A9D8F',
+              crest: '#38A3A5',
+              skyLight: '#F0F9FF',
+              sky: '#E0F2FE',
+              skyMid: '#BAE6FD',
+              slate: '#1E293B',
+            }
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(19, 78, 94, 0.08)',
+            'glow': '0 12px 35px -8px rgba(42, 157, 143, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-pacific-slate antialiased selection:bg-pacific-teal selection:text-white">
+
+  <!-- Reusable SVG Logo Definition (Hidden) -->
+  <svg class="hidden" aria-hidden="true">
+    <defs>
+      <!-- Outer Ring Gradient -->
+      <linearGradient id="pct-ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38A3A5" />
+        <stop offset="50%" stop-color="#2A9D8F" />
+        <stop offset="100%" stop-color="#134E5E" />
+      </linearGradient>
+      <!-- Inner Sky Blue Background Gradient -->
+      <linearGradient id="pct-sky-grad" x1="20%" y1="0%" x2="80%" y2="100%">
+        <stop offset="0%" stop-color="#E0F2FE" />
+        <stop offset="55%" stop-color="#BAE6FD" />
+        <stop offset="100%" stop-color="#93C5FD" />
+      </linearGradient>
+      <!-- Ocean Wave Main Gradient -->
+      <linearGradient id="pct-wave-main" x1="15%" y1="20%" x2="85%" y2="95%">
+        <stop offset="0%" stop-color="#48BFE3" />
+        <stop offset="40%" stop-color="#2A9D8F" />
+        <stop offset="100%" stop-color="#134E5E" />
+      </linearGradient>
+      <!-- Ocean Wave Secondary Ribbon Gradient -->
+      <linearGradient id="pct-wave-ribbon" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#80FFDB" stop-opacity="0.7" />
+        <stop offset="50%" stop-color="#38A3A5" />
+        <stop offset="100%" stop-color="#1B5E6F" />
+      </linearGradient>
+      <!-- Clip Path for Inner Circle -->
+      <clipPath id="pct-inner-clip">
+        <circle cx="60" cy="60" r="46" />
+      </clipPath>
+    </defs>
+
+    <!-- Complete Logo Symbol -->
+    <symbol id="pct-logo-mark" viewBox="0 0 120 120">
+      <!-- Outer Gradient Ring -->
+      <circle cx="60" cy="60" r="54" fill="none" stroke="url(#pct-ring-grad)" stroke-width="7.5" />
+      <!-- White Gap Ring -->
+      <circle cx="60" cy="60" r="48" fill="#FFFFFF" />
+      <!-- Inner Sky Gradient Circle -->
+      <circle cx="60" cy="60" r="46" fill="url(#pct-sky-grad)" />
+      
+      <!-- Clipped Stylized Curling Pacific Wave -->
+      <g clip-path="url(#pct-inner-clip)">
+        <!-- Back Crest Highlight -->
+        <path d="M 10 64 C 24 44, 48 36, 63 48 C 72 55, 69 66, 61 65 C 65 59, 60 52, 51 54 C 39 57, 36 74, 52 82 C 69 90, 93 82, 108 62 L 108 112 L 10 112 Z" fill="url(#pct-wave-ribbon)" />
+        <!-- Main Deep Teal Wave Body -->
+        <path d="M 10 67 C 25 48, 49 41, 63 52 C 70 57, 68 65, 62 65 C 64 59, 59 54, 51 56 C 40 59, 39 76, 55 83 C 72 90, 94 82, 108 64 C 102 93, 81 110, 56 110 C 31 110, 12 91, 10 67 Z" fill="url(#pct-wave-main)" />
+        <!-- Lower Wave Flow Contour -->
+        <path d="M 22 86 C 42 98, 72 98, 96 81 C 86 101, 67 110, 48 108 C 34 106, 26 96, 22 86 Z" fill="#134E5E" opacity="0.55" />
+        <!-- Crisp White Crest Foam Line -->
+        <path d="M 12 65 C 26 45, 50 38, 64 49" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.9" />
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-sky-100 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo & Wordmark -->
+        <a href="#" class="flex items-center gap-3.5 group focus:outline-none">
+          <svg class="w-12 h-12 sm:w-13 sm:h-13 shrink-0 transition-transform duration-300 group-hover:scale-105" aria-label="Pacific Crest Technologies Logo">
+            <use href="#pct-logo-mark"></use>
+          </svg>
+          <div class="flex flex-col">
+            <span class="font-display font-extrabold text-pacific-slate text-base sm:text-lg tracking-tight leading-none">
+              PACIFIC CREST
+            </span>
+            <span class="font-display font-bold text-pacific-ocean text-xs sm:text-sm tracking-[0.14em] leading-tight mt-0.5">
+              TECHNOLOGIES
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#questions" class="text-sm font-medium text-slate-600 hover:text-pacific-deep transition-colors">Key Questions</a>
+          <a href="#compliance" class="text-sm font-medium text-slate-600 hover:text-pacific-deep transition-colors">Defense &amp; Compliance</a>
+          <a href="#approach" class="text-sm font-medium text-slate-600 hover:text-pacific-deep transition-colors">Our 5-Step Process</a>
+          <a href="#about" class="text-sm font-medium text-slate-600 hover:text-pacific-deep transition-colors">Why Us</a>
+        </nav>
+
+        <!-- Desktop CTA & Mobile Menu Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-pacific-deep to-pacific-teal text-white font-semibold text-sm shadow-glow hover:opacity-95 transition-all active:scale-[0.98]">
+            <span>Schedule a 15-Min Call</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-pacific-slate hover:bg-sky-50 focus:outline-none focus:ring-2 focus:ring-pacific-teal">
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-sky-100 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+      <a href="#questions" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-pacific-deep">Are You Asking These Questions?</a>
+      <a href="#compliance" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-pacific-deep">Federal Defense Compliance</a>
+      <a href="#approach" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-pacific-deep">Our 5-Step Methodology</a>
+      <a href="#about" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-pacific-deep">70+ Years Experience</a>
+      <div class="pt-2">
+        <a href="#contact" class="mobile-nav-link flex items-center justify-center gap-2 w-full px-5 py-3.5 rounded-xl bg-gradient-to-r from-pacific-deep to-pacific-teal text-white font-semibold text-base shadow-md">
+          <span>Book a 15-Minute Discovery Call</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-pacific-skyLight via-pacific-sky/70 to-white pt-12 pb-20 lg:pt-20 lg:pb-28">
+    <!-- Decorative Subtle Wave/Glow Accents -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-pacific-crest/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-24 w-80 h-80 rounded-full bg-sky-300/20 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <!-- Trust / Identity Pill Badge -->
+          <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-4 py-2 rounded-full bg-white/90 border border-sky-200/80 shadow-sm mb-6">
+            <span class="w-2 h-2 rounded-full bg-pacific-teal animate-pulse"></span>
+            <span class="text-xs sm:text-sm font-semibold text-pacific-deep tracking-wide">
+              Hawaiʻi-Based &bull; Women-Owned &bull; 70+ Years Combined Experience
+            </span>
+          </div>
+
+          <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-[3.15rem] text-pacific-slate tracking-tight leading-[1.15] mb-6">
+            Navigating <span class="text-transparent bg-clip-text bg-gradient-to-r from-pacific-deep via-pacific-ocean to-pacific-teal">AI, Systems Integration,</span> and Cybersecurity Compliance with Confidence
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
+            We formed our Hawaiʻi-based firm to conduct thorough cybersecurity assessments, build actionable modernization roadmaps, and execute hands-on technology upgrades—protecting federal defense contractors, subcontractors, and small businesses across Hawaiʻi, the Pacific, and the West Coast.
+          </p>
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-gradient-to-r from-pacific-deep to-pacific-teal text-white font-semibold text-base shadow-glow hover:translate-y-[-1px] transition-all">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>Book a 15-Minute Discovery Call</span>
+            </a>
+            <a href="#questions" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl bg-white text-pacific-deep font-semibold text-base border border-sky-200 hover:bg-sky-50/70 transition-all shadow-sm">
+              <span>Explore Common Questions</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Key Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-sky-200/70 max-w-xl mx-auto lg:mx-0">
+            <div>
+              <p class="font-display font-extrabold text-xl sm:text-2xl text-pacific-deep">70+ Yrs</p>
+              <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Combined Tech Leadership</p>
+            </div>
+            <div>
+              <p class="font-display font-extrabold text-xl sm:text-2xl text-pacific-teal">End-to-End</p>
+              <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Assessment to Execution</p>
+            </div>
+            <div>
+              <p class="font-display font-extrabold text-xl sm:text-2xl text-pacific-ocean">Defense-Ready</p>
+              <p class="text-xs sm:text-sm text-slate-500 mt-0.5">CMMC &amp; NIST Alignment</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Emblem & Executive Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md bg-white/85 backdrop-blur-md rounded-3xl p-7 sm:p-8 border border-sky-100 shadow-soft">
+            <!-- Brand Emblem Centered -->
+            <div class="flex flex-col items-center text-center mb-6">
+              <div class="p-3 rounded-full bg-gradient-to-b from-sky-50 to-white shadow-inner mb-4">
+                <svg class="w-28 h-28 sm:w-32 sm:h-32" aria-label="Pacific Crest Technologies Emblem">
+                  <use href="#pct-logo-mark"></use>
+                </svg>
+              </div>
+              <h2 class="font-display font-extrabold text-lg sm:text-xl text-pacific-slate tracking-tight">
+                PACIFIC CREST TECHNOLOGIES
+              </h2>
+              <p class="text-xs font-semibold uppercase tracking-widest text-pacific-teal mt-1">
+                Hawaiʻi &bull; Pacific &bull; West Coast
+              </p>
+            </div>
+
+            <!-- Actionable Value Pillars Box -->
+            <div class="space-y-3 bg-pacific-skyLight/70 rounded-2xl p-5 border border-sky-100">
+              <div class="flex items-start gap-3">
+                <div class="w-7 h-7 rounded-lg bg-pacific-deep text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-pacific-slate">Beyond the Audit</h3>
+                  <p class="text-xs text-slate-600 leading-relaxed">We don't hand you a report and walk away—we prioritize, migrate, and implement the fixes.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-7 h-7 rounded-lg bg-pacific-teal text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-pacific-slate">Practical AI &amp; Systems Integration</h3>
+                  <p class="text-xs text-slate-600 leading-relaxed">Modernize legacy infrastructure securely while maintaining cost effectiveness.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Email Bar -->
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>Direct Contact:</span>
+              <a href="mailto:info@pacificcresttechnologies.com" class="font-semibold text-pacific-deep hover:text-pacific-teal transition-colors">
+                info@pacificcresttechnologies.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Subtle Wave Divider Bottom -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none pointer-events-none">
+      <svg class="relative block w-full h-8 sm:h-12" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#FFFFFF"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Section 3: "Are You Asking These Questions?" Interactive Section -->
+  <section id="questions" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <span class="inline-block px-3.5 py-1.5 rounded-full bg-pacific-sky text-pacific-deep font-semibold text-xs uppercase tracking-wider mb-3">
+          Clarity in a Complex Landscape
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-pacific-slate tracking-tight mb-4">
+          Are You Asking These Questions?
+        </h2>
+        <p class="text-base sm:text-lg text-slate-600">
+          Business owners, executives, and IT managers across Hawaiʻi and the Pacific come to us with these exact concerns. Select any question below to see how we help you move forward.
+        </p>
+      </div>
+
+      <!-- Interactive Accordion Container -->
+      <div id="faq-accordion" class="space-y-4">
+        <!-- Populated cleanly via JS so all 7 questions from the document are interactive, accessible, and searchable -->
+      </div>
+
+      <!-- Bottom Callout Banner -->
+      <div class="mt-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-pacific-skyLight to-pacific-sky border border-sky-200/80 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <h3 class="font-display font-bold text-lg sm:text-xl text-pacific-slate">
+            Sound familiar? You don't have to figure it out alone.
+          </h3>
+          <p class="text-sm sm:text-base text-slate-600 mt-1">
+            Let’s spend 15 minutes discussing your current environment and upcoming deadlines—zero pressure.
+          </p>
+        </div>
+        <a href="#contact" class="shrink-0 px-6 py-3.5 rounded-xl bg-pacific-deep text-white font-semibold text-sm hover:bg-pacific-ocean transition-colors shadow-sm">
+          Start a 15-Minute Conversation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Core Mission & Federal Defense Compliance Focus -->
+  <section id="compliance" class="py-16 sm:py-24 bg-gradient-to-br from-pacific-deep via-pacific-ocean to-[#0F3D4C] text-white relative overflow-hidden">
+    <!-- Subtle Background Pattern -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Mission Narrative -->
+        <div class="lg:col-span-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-sky-200 text-xs font-semibold uppercase tracking-wider mb-5">
+            <svg class="w-4 h-4 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <span>Protecting Hawaiʻi's Defense Supply Chain</span>
+          </div>
+
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl leading-tight mb-6">
+            Urgent Cybersecurity Requirements Shouldn't Put Your Business in Jeopardy
+          </h2>
+
+          <p class="text-sky-100 text-base sm:text-lg leading-relaxed mb-5">
+            At the core of Pacific Crest Technologies is a critical concern: federal defense contractors and subcontractors in Hawaiʻi are facing strict cybersecurity requirements and certifications (such as <strong class="text-white font-semibold">CMMC</strong> and <strong class="text-white font-semibold">NIST SP 800-171</strong>) that will put contracts and business continuity at risk if not met before upcoming deadlines.
+          </p>
+
+          <p class="text-sky-100/90 text-base leading-relaxed mb-8">
+            <strong class="text-teal-300 font-semibold">We don’t stop at the assessment.</strong> Many consultants deliver a dense list of findings and leave your internal team stranded. We stay beside you to identify and prioritize system needs—executing the changes, upgrades, and replacements, and <span class="underline decoration-teal-400 decoration-2 underline-offset-4 text-white font-medium">actually doing the work</span>.
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm font-medium text-white">CMMC &amp; NIST Readiness</span>
+            <span class="px-4 py-2 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm font-medium text-white">Legacy System Remediation</span>
+            <span class="px-4 py-2 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm font-medium text-white">Hands-On Implementation</span>
+          </div>
+        </div>
+
+        <!-- Right Contrast Cards: Assessment-Only vs. Pacific Crest Technologies -->
+        <div class="lg:col-span-6 space-y-5">
+          <!-- Card 1: The Typical Gap -->
+          <div class="p-6 sm:p-7 rounded-3xl bg-white/5 border border-white/15 backdrop-blur-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-rose-500/20 text-rose-300 flex items-center justify-center font-bold text-sm">✕</span>
+              <h3 class="font-display font-bold text-lg text-sky-100">Where Traditional Assessments Fall Short</h3>
+            </div>
+            <p class="text-sm text-sky-200/80 leading-relaxed">
+              You pay for a gap analysis, receive a 100-page technical PDF full of vulnerabilities, and are left wondering where to find qualified engineers, how to modernize aging systems, or how to afford the remediation before audit deadlines hit.
+            </p>
+          </div>
+
+          <!-- Card 2: The Pacific Crest Difference -->
+          <div class="p-6 sm:p-7 rounded-3xl bg-white text-pacific-slate shadow-2xl border-2 border-teal-400/50">
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <div class="flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-pacific-deep to-pacific-teal text-white flex items-center justify-center font-bold">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <h3 class="font-display font-extrabold text-lg sm:text-xl text-pacific-slate">The Pacific Crest Advantage</h3>
+              </div>
+              <span class="hidden sm:inline-block px-3 py-1 rounded-full bg-teal-50 text-pacific-teal text-xs font-bold">Full Lifecycle Partner</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-600">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-pacific-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span><strong>Prioritized System Remediation:</strong> Clear sequence of changes, upgrades, and replacements ranked by compliance impact and budget.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-pacific-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span><strong>Hands-On Engineering &amp; Migration:</strong> Our team configures, integrates, and deploys the actual technology solutions for you.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-pacific-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span><strong>Safe AI &amp; Systems Integration:</strong> Adopt modern automation and AI tools without compromising sensitive government or client data.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: 5-Step Methodology / Services -->
+  <section id="approach" class="py-16 sm:py-24 bg-pacific-skyLight/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block px-3.5 py-1.5 rounded-full bg-white border border-sky-200 text-pacific-deep font-semibold text-xs uppercase tracking-wider mb-3">
+          Our Goal &amp; End-to-End Methodology
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-pacific-slate tracking-tight mb-4">
+          A Proven 5-Step Path from Risk to Resilience
+        </h2>
+        <p class="text-base sm:text-lg text-slate-600">
+          Our goal is to work side-by-side with your leadership and IT staff to turn complex compliance and modernization hurdles into practical, measurable progress.
+        </p>
+      </div>
+
+      <!-- 5-Step Visual Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="group bg-white rounded-3xl p-6 border border-sky-100 shadow-soft hover:border-pacific-teal/50 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="flex items-center justify-between mb-5">
+            <span class="w-11 h-11 rounded-2xl bg-pacific-sky text-pacific-deep font-display font-extrabold text-lg flex items-center justify-center group-hover:bg-pacific-deep group-hover:text-white transition-colors">
+              01
+            </span>
+            <svg class="w-6 h-6 text-pacific-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-pacific-slate mb-2">Identify Gaps</h3>
+          <p class="text-sm text-slate-600 leading-relaxed flex-grow">
+            Comprehensive cybersecurity and infrastructure assessments to uncover vulnerabilities, legacy bottlenecks, and federal compliance shortfalls.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="group bg-white rounded-3xl p-6 border border-sky-100 shadow-soft hover:border-pacific-teal/50 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="flex items-center justify-between mb-5">
+            <span class="w-11 h-11 rounded-2xl bg-pacific-sky text-pacific-deep font-display font-extrabold text-lg flex items-center justify-center group-hover:bg-pacific-deep group-hover:text-white transition-colors">
+              02
+            </span>
+            <svg class="w-6 h-6 text-pacific-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-pacific-slate mb-2">Create a Plan</h3>
+          <p class="text-sm text-slate-600 leading-relaxed flex-grow">
+            Build a clear, step-by-step roadmap prioritizing critical security controls, legacy migrations, and realistic certification milestones.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="group bg-white rounded-3xl p-6 border border-sky-100 shadow-soft hover:border-pacific-teal/50 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="flex items-center justify-between mb-5">
+            <span class="w-11 h-11 rounded-2xl bg-pacific-sky text-pacific-deep font-display font-extrabold text-lg flex items-center justify-center group-hover:bg-pacific-deep group-hover:text-white transition-colors">
+              03
+            </span>
+            <svg class="w-6 h-6 text-pacific-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-pacific-slate mb-2">Identify Solutions</h3>
+          <p class="text-sm text-slate-600 leading-relaxed flex-grow">
+            Select right-sized AI, Systems Integration (SI), and cybersecurity architectures tailored specifically to your operational workflows.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="group bg-white rounded-3xl p-6 border border-sky-100 shadow-soft hover:border-pacific-teal/50 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="flex items-center justify-between mb-5">
+            <span class="w-11 h-11 rounded-2xl bg-pacific-sky text-pacific-deep font-display font-extrabold text-lg flex items-center justify-center group-hover:bg-pacific-deep group-hover:text-white transition-colors">
+              04
+            </span>
+            <svg class="w-6 h-6 text-pacific-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-pacific-slate mb-2">Implement Technology</h3>
+          <p class="text-sm text-slate-600 leading-relaxed flex-grow">
+            We roll up our sleeves and execute the changes, system upgrades, cloud/on-prem migrations, and security hardening—so your team stays productive.
+          </p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="group bg-white rounded-3xl p-6 border border-sky-100 shadow-soft hover:border-pacific-teal/50 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="flex items-center justify-between mb-5">
+            <span class="w-11 h-11 rounded-2xl bg-pacific-sky text-pacific-deep font-display font-extrabold text-lg flex items-center justify-center group-hover:bg-pacific-deep group-hover:text-white transition-colors">
+              05
+            </span>
+            <svg class="w-6 h-6 text-pacific-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-pacific-slate mb-2">Navigate Cost Effectiveness</h3>
+          <p class="text-sm text-slate-600 leading-relaxed flex-grow">
+            Balance enterprise-grade security with small-business budgets—eliminating wasteful licensing while maximizing long-term ROI.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Why Pacific Crest Technologies (Credibility & Heritage) -->
+  <section id="about" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Credentials Grid -->
+        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="p-6 rounded-3xl bg-pacific-skyLight/80 border border-sky-100">
+            <div class="w-11 h-11 rounded-2xl bg-pacific-deep text-white flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-extrabold text-2xl text-pacific-slate mb-1">70+ Years</h3>
+            <p class="text-sm font-semibold text-pacific-ocean mb-2">Combined High-Tech Experience</p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Seasoned leadership proven across nimble small business environments and complex global enterprises.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-pacific-skyLight/80 border border-sky-100">
+            <div class="w-11 h-11 rounded-2xl bg-pacific-teal text-white flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-pacific-slate mb-1">Hawaiʻi-Based</h3>
+            <p class="text-sm font-semibold text-pacific-ocean mb-2">Serving the Pacific &amp; West Coast</p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Local accountability and real-time responsiveness across island and West Coast time zones.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-pacific-skyLight/80 border border-sky-100">
+            <div class="w-11 h-11 rounded-2xl bg-pacific-ocean text-white flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-pacific-slate mb-1">Women-Owned</h3>
+            <p class="text-sm font-semibold text-pacific-ocean mb-2">Diverse &amp; Trusted Leadership</p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Committed to elevating small businesses and strengthening regional supplier diversity.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-pacific-skyLight/80 border border-sky-100">
+            <div class="w-11 h-11 rounded-2xl bg-pacific-crest text-white flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-pacific-slate mb-1">Practical Execution</h3>
+            <p class="text-sm font-semibold text-pacific-ocean mb-2">Built for Lean Teams</p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              We act as an extension of your staff—translating enterprise best practices into realistic steps.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Story & Philosophy -->
+        <div class="lg:col-span-6">
+          <span class="inline-block px-3.5 py-1.5 rounded-full bg-pacific-sky text-pacific-deep font-semibold text-xs uppercase tracking-wider mb-3">
+            Why Pacific Crest Technologies
+          </span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-pacific-slate tracking-tight mb-5">
+            Enterprise-Caliber Expertise Tailored for Small Businesses
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed mb-4">
+            With over <strong>70 years of combined experience in high technology</strong>—working on everything from small business networks to large global enterprises—our team understands how rapidly technology and regulatory landscapes evolve.
+          </p>
+          <p class="text-base text-slate-600 leading-relaxed mb-6">
+            Whether you are integrating AI to boost operational efficiency, modernizing legacy systems, or preparing for federal defense cybersecurity certification, we bridge the gap between high-level strategy and day-to-day technical execution.
+          </p>
+
+          <!-- Core Focus Areas Tags -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Core Advisory &amp; Implementation Domains</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-sky-200 text-xs font-semibold text-pacific-deep">Cybersecurity Assessments</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-sky-200 text-xs font-semibold text-pacific-deep">AI Readiness &amp; Governance</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-sky-200 text-xs font-semibold text-pacific-deep">Systems Integration (SI)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-sky-200 text-xs font-semibold text-pacific-deep">Legacy System Migration</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-sky-200 text-xs font-semibold text-pacific-deep">Federal Defense Compliance</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-sky-200 text-xs font-semibold text-pacific-deep">IT Cost Optimization</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: 'Schedule a Short 15-Minute Call' & Contact Section -->
+  <section id="contact" class="py-16 sm:py-24 bg-gradient-to-b from-pacific-skyLight via-pacific-sky/60 to-pacific-skyLight border-t border-sky-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-[2rem] shadow-soft border border-sky-100 overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          
+          <!-- Left Warm Invitation Column -->
+          <div class="lg:col-span-5 bg-gradient-to-br from-pacific-deep to-pacific-ocean text-white p-8 sm:p-10 flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-sky-100 text-xs font-semibold mb-6">
+                <svg class="w-4 h-4 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>No-Obligation Discovery Call</span>
+              </div>
+
+              <h2 class="font-display font-extrabold text-2xl sm:text-3xl leading-tight mb-5">
+                Let’s Have a Short 15-Minute Call
+              </h2>
+
+              <!-- Exact Warm Invitation Quote from Document -->
+              <blockquote class="p-5 rounded-2xl bg-white/10 border border-white/15 text-sky-50 text-base leading-relaxed italic mb-6">
+                “I would love to have a short 15-minute call with you. What I'm looking to understand is a bit about the technology systems you use today, and how you are approaching government compliance requirements, if at all.”
+              </blockquote>
+
+              <div class="space-y-3 text-sm text-sky-100">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-teal-400/20 text-teal-300 flex items-center justify-center text-xs font-bold">1</span>
+                  <span>Share a quick snapshot of your current systems</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-teal-400/20 text-teal-300 flex items-center justify-center text-xs font-bold">2</span>
+                  <span>Discuss any federal or client compliance timelines</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <span class="w-5 h-5 rounded-full bg-teal-400/20 text-teal-300 flex items-center justify-center text-xs font-bold">3</span>
+                  <span>Leave with clear, practical next steps</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Email & Copy Box -->
+            <div class="mt-10 pt-6 border-t border-white/15">
+              <p class="text-xs uppercase tracking-wider text-sky-200 font-semibold mb-2">Prefer Email? Reach Us Directly:</p>
+              <div class="flex flex-wrap items-center justify-between gap-2 bg-white/10 rounded-xl p-3 border border-white/15">
+                <a href="mailto:info@pacificcresttechnologies.com" class="text-sm font-semibold text-white hover:text-teal-300 transition-colors break-all">
+                  info@pacificcresttechnologies.com
+                </a>
+                <button id="copy-email-btn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white text-pacific-deep text-xs font-bold hover:bg-sky-50 transition-colors shrink-0">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  <span id="copy-email-text">Copy</span>
+                </button>
+              </div>
+              <p id="copy-feedback" class="text-xs text-teal-300 mt-1.5 hidden">Email address copied to clipboard!</p>
+            </div>
+          </div>
+
+          <!-- Right Interactive Discovery Call Form -->
+          <div class="lg:col-span-7 p-8 sm:p-10">
+            <h3 class="font-display font-bold text-xl sm:text-2xl text-pacific-slate mb-2">
+              Request Your 15-Minute Discovery Call
+            </h3>
+            <p class="text-sm text-slate-600 mb-6">
+              Complete the brief details below to prepare your inquiry and connect directly with our consulting team.
+            </p>
+
+            <form id="discovery-form" class="space-y-5" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="full-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    Your Name <span class="text-rose-500">*</span>
+                  </label>
+                  <input type="text" id="full-name" name="fullName" required placeholder="e.g., Jordan Akana" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-pacific-slate text-sm focus:outline-none focus:ring-2 focus:ring-pacific-teal focus:bg-white transition-all" />
+                </div>
+
+                <div>
+                  <label for="organization" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    Company / Organization <span class="text-rose-500">*</span>
+                  </label>
+                  <input type="text" id="organization" name="organization" required placeholder="e.g., Aloha Defense Logistics" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-pacific-slate text-sm focus:outline-none focus:ring-2 focus:ring-pacific-teal focus:bg-white transition-all" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    Work Email <span class="text-rose-500">*</span>
+                  </label>
+                  <input type="email" id="email" name="email" required placeholder="you@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-pacific-slate text-sm focus:outline-none focus:ring-2 focus:ring-pacific-teal focus:bg-white transition-all" />
+                </div>
+
+                <div>
+                  <label for="timeframe" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    Preferred Call Timeframe
+                  </label>
+                  <select id="timeframe" name="timeframe" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-pacific-slate text-sm focus:outline-none focus:ring-2 focus:ring-pacific-teal focus:bg-white transition-all">
+                    <option value="Morning (Hawaiʻi / HST)">Morning (Hawaiʻi / HST)</option>
+                    <option value="Afternoon (Hawaiʻi / HST)">Afternoon (Hawaiʻi / HST)</option>
+                    <option value="Morning (Pacific / PST)">Morning (Pacific / PST)</option>
+                    <option value="Afternoon (Pacific / PST)">Afternoon (Pacific / PST)</option>
+                    <option value="Flexible / Any Time">Flexible / Any Time</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="focus-area" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  Primary Focus Area
+                </label>
+                <select id="focus-area" name="focusArea" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-pacific-slate text-sm focus:outline-none focus:ring-2 focus:ring-pacific-teal focus:bg-white transition-all">
+                  <option value="Federal Defense Cybersecurity Compliance (CMMC / NIST)">Federal Defense Cybersecurity Compliance (CMMC / NIST)</option>
+                  <option value="Cybersecurity Assessment & Remediation">Cybersecurity Assessment &amp; Remediation</option>
+                  <option value="Legacy System Modernization & Migration">Legacy System Modernization &amp; Migration</option>
+                  <option value="AI Strategy & Systems Integration (SI)">AI Strategy &amp; Systems Integration (SI)</option>
+                  <option value="General IT Advisory & Cost Optimization">General IT Advisory &amp; Cost Optimization</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="systems-notes" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  Current Systems &amp; Compliance Context (Optional)
+                </label>
+                <textarea id="systems-notes" name="systemsNotes" rows="3" placeholder="Tell us briefly about the technology systems you use today or any compliance deadlines you are navigating..." class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-pacific-slate text-sm focus:outline-none focus:ring-2 focus:ring-pacific-teal focus:bg-white transition-all"></textarea>
+              </div>
+
+              <!-- Validation Error Message Box -->
+              <div id="form-error" class="hidden p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-sm font-medium">
+                Please fill in your name, organization, and a valid work email address.
+              </div>
+
+              <button type="submit" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-pacific-deep to-pacific-teal text-white font-bold text-base shadow-glow hover:opacity-95 transition-all flex items-center justify-center gap-2">
+                <span>Prepare &amp; Send 15-Minute Call Request</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </form>
+
+            <!-- Instant Confirmation & Ready-to-Send Summary State -->
+            <div id="form-confirmation" class="hidden mt-6 p-6 rounded-2xl bg-teal-50/80 border border-teal-200">
+              <div class="flex items-start gap-3.5 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-pacific-teal text-white flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-lg text-pacific-slate">Your 15-Minute Call Summary is Ready</h4>
+                  <p class="text-sm text-slate-600 mt-0.5">
+                    Click below to launch your email client addressed to <strong>info@pacificcresttechnologies.com</strong>, or copy the formatted summary directly.
+                  </p>
+                </div>
+              </div>
+
+              <pre id="summary-preview" class="p-4 rounded-xl bg-white border border-teal-100 text-xs text-slate-700 whitespace-pre-wrap font-sans leading-relaxed mb-4"></pre>
+
+              <div class="flex flex-col sm:flex-row gap-3">
+                <a id="mailto-trigger" href="mailto:info@pacificcresttechnologies.com" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-pacific-deep text-white font-semibold text-sm hover:bg-pacific-ocean transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span>Open in Email App</span>
+                </a>
+                <button id="copy-summary-btn" type="button" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white border border-slate-200 text-pacific-slate font-semibold text-sm hover:bg-slate-50 transition-colors">
+                  <span id="copy-summary-text">Copy Summary Text</span>
+                </button>
+                <button id="reset-form-btn" type="button" class="inline-flex items-center justify-center px-4 py-3 rounded-xl text-xs font-semibold text-slate-500 hover:text-pacific-deep">
+                  Edit Details
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Footer -->
+  <footer class="bg-pacific-slate text-slate-300 pt-14 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 pb-10 border-b border-slate-700/80">
+        
+        <!-- Brand Identity -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <div class="flex items-center gap-3.5 mb-3">
+            <svg class="w-12 h-12 shrink-0" aria-label="Pacific Crest Technologies Logo">
+              <use href="#pct-logo-mark"></use>
+            </svg>
+            <div>
+              <span class="block font-display font-extrabold text-white text-lg tracking-tight leading-none">
+                PACIFIC CREST
+              </span>
+              <span class="block font-display font-bold text-teal-400 text-xs tracking-[0.15em] mt-1">
+                TECHNOLOGIES
+              </span>
+            </div>
+          </div>
+          <p class="text-sm text-slate-400 max-w-sm mt-2">
+            Women-owned AI, Systems Integration, and Cybersecurity consulting firm delivering secure, cost-effective technology solutions.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm font-medium">
+          <a href="#questions" class="hover:text-teal-300 transition-colors">Key Questions</a>
+          <a href="#compliance" class="hover:text-teal-300 transition-colors">Defense Compliance</a>
+          <a href="#approach" class="hover:text-teal-300 transition-colors">5-Step Process</a>
+          <a href="#about" class="hover:text-teal-300 transition-colors">About Us</a>
+          <a href="#contact" class="hover:text-teal-300 transition-colors">15-Min Call</a>
+        </div>
+
+        <!-- Regional & Contact Info -->
+        <div class="text-center md:text-right">
+          <p class="text-xs font-bold uppercase tracking-widest text-teal-400 mb-1.5">
+            Hawaiʻi &bull; Pacific &bull; West Coast
+          </p>
+          <a href="mailto:info@pacificcresttechnologies.com" class="text-sm sm:text-base font-semibold text-white hover:text-teal-300 transition-colors">
+            info@pacificcresttechnologies.com
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 Pacific Crest Technologies. All rights reserved.</p>
+        <p>Women-Owned Technology Consulting &bull; Hawaiʻi-Based</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. All 7 Core Questions & Consultant Guidance
+      const questionsData = [
+        {
+          question: "What do AI, SI, and Cybersecurity mean for my organization?",
+          answer: "Artificial Intelligence (AI), Systems Integration (SI), and Cybersecurity work together to make your business faster, better connected, and resilient against threats. Rather than chasing buzzwords, we translate what these technologies mean specifically for your workflows—ensuring any AI or system integration strengthens productivity without introducing security or compliance risks."
+        },
+        {
+          question: "I'm an IT manager, should I be implementing something for cybersecurity?",
+          answer: "Yes—even lean IT teams need foundational protections, continuous monitoring, and documented security controls. Whether you are protecting sensitive client data or preparing for federal contractor audits, we partner directly with IT managers to prioritize high-impact safeguards without overwhelming your daily operations."
+        },
+        {
+          question: "We've done a cybersecurity assessment and received the results, now what?",
+          answer: "An assessment is only the starting line. Unlike firms that hand over a technical report and walk away, Pacific Crest Technologies helps you interpret the findings, rank vulnerabilities by business and compliance urgency, and execute the actual remediation, upgrades, and system configurations."
+        },
+        {
+          question: "I have legacy systems, where do I start on the journey to compliance?",
+          answer: "You don't have to rip and replace everything overnight. We start by mapping how your legacy systems interact with sensitive data, identifying where compensating controls or phased migrations make the most sense, and building a realistic modernization path that keeps your business running smoothly."
+        },
+        {
+          question: "Is achieving compliance possible?",
+          answer: "Absolutely. With structured planning and experienced guidance, small and mid-sized organizations regularly achieve full alignment with federal defense standards (such as NIST SP 800-171 and CMMC). Breaking the requirements into manageable, prioritized milestones makes compliance achievable before critical deadlines."
+        },
+        {
+          question: "Where do I find resources to do the work?",
+          answer: "Right here. With over 70 years of combined high-technology experience, our team doesn't just advise—we roll up our sleeves and do the implementation work alongside you, providing the specialized engineering and compliance expertise small businesses rarely have in-house."
+        },
+        {
+          question: "And, what will this cost?",
+          answer: "Navigating cost effectiveness is one of our core pillars. We right-size technology solutions to fit small business budgets—helping you avoid unnecessary enterprise software bloat while investing strategically in controls that protect your contracts and deliver measurable ROI."
+        }
+      ];
+
+      const accordionContainer = document.getElementById('faq-accordion');
+
+      questionsData.forEach((item, index) => {
+        const isFirst = index === 0;
+        const card = document.createElement('div');
+        card.className = `rounded-2xl border transition-all duration-200 ${isFirst ? 'border-pacific-teal/50 bg-pacific-skyLight/50 shadow-sm' : 'border-slate-200/90 bg-white hover:border-sky-300'}`;
+
+        card.innerHTML = `
+          <button type="button" aria-expanded="${isFirst}" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left focus:outline-none">
+            <div class="flex items-center gap-3.5">
+              <span class="w-8 h-8 rounded-xl ${isFirst ? 'bg-pacific-deep text-white' : 'bg-pacific-sky text-pacific-deep'} font-display font-bold text-xs flex items-center justify-center shrink-0 transition-colors">
+                0${index + 1}
+              </span>
+              <span class="font-display font-bold text-base sm:text-lg text-pacific-slate">
+                ${item.question}
+              </span>
+            </div>
+            <span class="w-8 h-8 rounded-full bg-slate-100 text-pacific-deep flex items-center justify-center shrink-0 transition-transform duration-200 ${isFirst ? 'rotate-180 bg-pacific-teal/15' : ''}">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content ${isFirst ? '' : 'hidden'} px-5 sm:px-6 pb-6 pt-0 pl-16 sm:pl-[4.25rem]">
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed border-t border-sky-100 pt-4">
+              ${item.answer}
+            </p>
+          </div>
+        `;
+
+        accordionContainer.appendChild(card);
+      });
+
+      // Accordion Click Handler
+      accordionContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('.faq-toggle');
+        if (!btn) return;
+
+        const parentCard = btn.parentElement;
+        const content = parentCard.querySelector('.faq-content');
+        const badge = btn.querySelector('span:first-child');
+        const chevron = btn.querySelector('span:last-child');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        // Toggle state
+        btn.setAttribute('aria-expanded', !isExpanded);
+        content.classList.toggle('hidden');
+        chevron.classList.toggle('rotate-180');
+        chevron.classList.toggle('bg-pacific-teal/15');
+
+        if (!isExpanded) {
+          parentCard.classList.remove('border-slate-200/90', 'bg-white');
+          parentCard.classList.add('border-pacific-teal/50', 'bg-pacific-skyLight/50', 'shadow-sm');
+          badge.classList.remove('bg-pacific-sky', 'text-pacific-deep');
+          badge.classList.add('bg-pacific-deep', 'text-white');
+        } else {
+          parentCard.classList.add('border-slate-200/90', 'bg-white');
+          parentCard.classList.remove('border-pacific-teal/50', 'bg-pacific-skyLight/50', 'shadow-sm');
+          badge.classList.add('bg-pacific-sky', 'text-pacific-deep');
+          badge.classList.remove('bg-pacific-deep', 'text-white');
+        }
+      });
+
+      // 2. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        iconOpen.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          iconOpen.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+        });
+      });
+
+      // 3. Copy Email to Clipboard (using document.execCommand fallback for iframe compatibility)
+      function copyTextToClipboard(text, onSuccess) {
+        const tempInput = document.createElement('textarea');
+        tempInput.value = text;
+        tempInput.style.position = 'fixed';
+        tempInput.style.opacity = '0';
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+          document.execCommand('copy');
+          if (onSuccess) onSuccess();
+        } catch (err) {
+          console.error('Copy failed', err);
+        }
+        document.body.removeChild(tempInput);
+      }
+
+      const copyEmailBtn = document.getElementById('copy-email-btn');
+      const copyEmailText = document.getElementById('copy-email-text');
+      const copyFeedback = document.getElementById('copy-feedback');
+
+      copyEmailBtn.addEventListener('click', () => {
+        copyTextToClipboard('info@pacificcresttechnologies.com', () => {
+          copyEmailText.textContent = 'Copied!';
+          copyFeedback.classList.remove('hidden');
+          setTimeout(() => {
+            copyEmailText.textContent = 'Copy';
+            copyFeedback.classList.add('hidden');
+          }, 2500);
+        });
+      });
+
+      // 4. Discovery Call Form Validation & Mailto Summary Generator
+      const discoveryForm = document.getElementById('discovery-form');
+      const formError = document.getElementById('form-error');
+      const formConfirmation = document.getElementById('form-confirmation');
+      const summaryPreview = document.getElementById('summary-preview');
+      const mailtoTrigger = document.getElementById('mailto-trigger');
+      const copySummaryBtn = document.getElementById('copy-summary-btn');
+      const copySummaryText = document.getElementById('copy-summary-text');
+      const resetFormBtn = document.getElementById('reset-form-btn');
+
+      discoveryForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const fullName = document.getElementById('full-name').value.trim();
+        const organization = document.getElementById('organization').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const timeframe = document.getElementById('timeframe').value;
+        const focusArea = document.getElementById('focus-area').value;
+        const systemsNotes = document.getElementById('systems-notes').value.trim();
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!fullName || !organization || !email || !emailRegex.test(email)) {
+          formError.classList.remove('hidden');
+          return;
+        }
+
+        formError.classList.add('hidden');
+
+        const summaryBody = [
+          `Hello Pacific Crest Technologies Team,`,
+          ``,
+          `I would like to schedule a 15-minute discovery call.`,
+          ``,
+          `• Name: ${fullName}`,
+          `• Organization: ${organization}`,
+          `• Work Email: ${email}`,
+          `• Primary Focus: ${focusArea}`,
+          `• Preferred Timeframe: ${timeframe}`,
+          `• Current Systems / Compliance Notes: ${systemsNotes || 'Will discuss on our call.'}`,
+          ``,
+          `Looking forward to connecting!`
+        ].join('\n');
+
+        summaryPreview.textContent = summaryBody;
+
+        const subject = encodeURIComponent(`15-Minute Discovery Call Request: ${organization}`);
+        const body = encodeURIComponent(summaryBody);
+        mailtoTrigger.setAttribute('href', `mailto:info@pacificcresttechnologies.com?subject=${subject}&body=${body}`);
+
+        discoveryForm.classList.add('hidden');
+        formConfirmation.classList.remove('hidden');
+      });
+
+      copySummaryBtn.addEventListener('click', () => {
+        copyTextToClipboard(summaryPreview.textContent, () => {
+          copySummaryText.textContent = 'Copied Summary!';
+          setTimeout(() => {
+            copySummaryText.textContent = 'Copy Summary Text';
+          }, 2500);
+        });
+      });
+
+      resetFormBtn.addEventListener('click', () => {
+        formConfirmation.classList.add('hidden');
+        discoveryForm.classList.remove('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
